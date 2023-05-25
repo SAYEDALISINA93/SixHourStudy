@@ -24,7 +24,7 @@ struct ContentView: View {
             .padding()
             .toolbar {
                 Button("Set") {
-                    print("123")
+                    print("1234")
                 }
 
             }
