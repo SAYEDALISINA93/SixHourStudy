@@ -9,13 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Welcome!")
+                Button("Start") {
+                    print("123")
+                }
+                .frame(width: 100, height: 50, alignment: .center)
+                
+            }
+            .padding()
+            .toolbar {
+                Button("Set") {
+                    print("123")
+                }
+
+            }
+            .navigationTitle("Timer App")
         }
-        .padding()
+
     }
 }
 
