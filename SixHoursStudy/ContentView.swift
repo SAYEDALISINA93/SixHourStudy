@@ -8,25 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    var targetModel: Target
     var body: some View {
         NavigationStack{
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Welcome!")
-                Button("Start") {
-                    print("123")
+                
+                Spacer()
+                Text("0:00")
+                    .font(.system(size: 60))
+
+                HStack{
+                    Text("Current: 1")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("Remaining: ")
+                        .font(.subheadline)
+                    
                 }
-                .frame(width: 100, height: 50, alignment: .center)
+                .padding(EdgeInsets(top: 10, leading: 35, bottom: 20, trailing: 35))
+                
+                Spacer()
+                Button(action: {
+                    print("Start tapped")
+                }) {
+                    Text("Start")
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .font(.system(size: 18))
+                        .padding()
+                        .foregroundColor(.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color.white, lineWidth: 2)
+                    )
+                }
+                .background(Color.green)
+                .cornerRadius(25)
                 
             }
             .padding()
             .toolbar {
-                Button("Set") {
+                Button("Settings") {
                     print("1234")
                 }
-
             }
             .navigationTitle("Timer App")
         }
@@ -36,6 +59,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(targetModel: Target(hours: 1))
     }
 }

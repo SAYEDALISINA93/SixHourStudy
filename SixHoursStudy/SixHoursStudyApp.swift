@@ -11,7 +11,7 @@ import SwiftUI
 struct SixHoursStudyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(targetModel: Target(hours: 1))
         }
     }
 }
