@@ -15,6 +15,7 @@
 		D261D6E52A1BDE8C00AF3F8C /* SixHoursStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D6E42A1BDE8C00AF3F8C /* SixHoursStudyUITests.swift */; };
 		D261D6E72A1BDE8C00AF3F8C /* SixHoursStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D6E62A1BDE8C00AF3F8C /* SixHoursStudyUITestsLaunchTests.swift */; };
 		D298CF402A44833600374714 /* TargetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298CF3F2A44833600374714 /* TargetModel.swift */; };
+		D298CF422A448A8F00374714 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298CF412A448A8F00374714 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		D261D6E42A1BDE8C00AF3F8C /* SixHoursStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixHoursStudyUITests.swift; sourceTree = "<group>"; };
 		D261D6E62A1BDE8C00AF3F8C /* SixHoursStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixHoursStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D298CF3F2A44833600374714 /* TargetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetModel.swift; sourceTree = "<group>"; };
+		D298CF412A448A8F00374714 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				D261D6CD2A1BDE8C00AF3F8C /* Assets.xcassets */,
 				D261D6CF2A1BDE8C00AF3F8C /* Preview Content */,
 				D298CF3F2A44833600374714 /* TargetModel.swift */,
+				D298CF412A448A8F00374714 /* SettingsView.swift */,
 			);
 			path = SixHoursStudy;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D261D6CC2A1BDE8B00AF3F8C /* ContentView.swift in Sources */,
+				D298CF422A448A8F00374714 /* SettingsView.swift in Sources */,
 				D298CF402A44833600374714 /* TargetModel.swift in Sources */,
 				D261D6CA2A1BDE8B00AF3F8C /* SixHoursStudyApp.swift in Sources */,
 			);

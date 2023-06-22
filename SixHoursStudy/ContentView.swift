@@ -47,11 +47,10 @@ struct ContentView: View {
             }
             .padding()
             .toolbar {
-                Button("Settings") {
-                    print("1234")
+                NavigationLink(destination: SettingsView()) {
+                    Text("Settings")
                 }
             }
-            .navigationTitle("Timer App")
         }
 
     }
